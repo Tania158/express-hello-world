@@ -22,6 +22,15 @@ body {
   animated-text 1.2s steps(17, end) 1s 1 normal both
 }
 
+.typewriter-sub {
+  border-right: solid 5px transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 40px;
+  animation: animated-text-reverse 1.4s steps(17, end) 1s 1 normal both
+}
+
 /* text animation */
 @keyframes animated-text {
   from {
@@ -29,6 +38,16 @@ body {
   }
   to {
     width: 100%;
+  }
+}
+
+@keyframes animated-text-reverse {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
   }
 }
 
